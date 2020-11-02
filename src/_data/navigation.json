@@ -1,19 +1,28 @@
 {
   "items": [
     {
-      "text": "Home",
-      "url": "/",
-      "external": false
+      "text": "Campaign",
+      "url": "#"
     },
     {
-      "text": "GitHub",
-      "url": "https://github.com/hankchizljaw/hylia",
-      "external": true
+      "text": "Impact",
+      "url": "#"
     },
     {
-      "text": "Example Contact Page",
-      "url": "/contact",
-      "external": false
+      "text": "News",
+      "url": "#"
+    },
+    {
+      "text": "About",
+      "url": "#"
+    },
+    {
+      "text": "Search",
+      "url": "#"
+    },
+    {
+      "text": "Give Now",
+      "url": "#"
     }
   ]
 }
