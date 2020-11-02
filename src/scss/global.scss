@@ -79,3 +79,15 @@ img {
 @import 'components/skip-link';
 @import 'components/syntax-highlighting';
 @import 'components/video-player';
+
+// Custom Styles
+.parallelogram {
+	-webkit-transform: skew(-30deg);
+	transform: skew(-30deg);
+
+	.skew-fix {
+		display: inline-block;
+		-webkit-transform: skew(30deg);
+		transform: skew(30deg);
+	}
+}

@@ -1,25 +1,39 @@
 .intro {
-  background: var(--color-theme-highlight-block);
+	//   background: var(--color-theme-highlight-block);
+	background: url("https://foundation.uc.edu/image/_2019-redesign/homepage-hero-images/hero-2048x1000-student-7.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
 
-  &__summary {
-    --flow-space: #{get-size(500)};
-    font-size: get-size(500);
+	.trianglePattern {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		right: -30%;
+		width: 80%;
+	}
 
-    a {
-      color: currentColor;
+	&__summary {
+		--flow-space: #{get-size(500)};
+		font-size: get-size(500);
 
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
+		a {
+			color: currentColor;
 
-  &__heading {
-    max-width: 40ex;
-    color: var(--color-theme-feature-text);
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 
-    &--compact {
-      max-width: 20ex;
-    }
-  }
+	&__heading {
+		max-width: 40ex;
+		color: var(--color-theme-feature-text);
+
+		&--compact {
+			max-width: 20ex;
+		}
+	}
 }

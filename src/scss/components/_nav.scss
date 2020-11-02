@@ -1,9 +1,9 @@
 .nav {
 	&__list {
-		overflow-x: auto;
+		// overflow-x: auto;
 
 		// Add padding and neg margin to allow focus style visibility
-		padding: 0.5rem;
+		padding: 0.5rem 0;
 		margin: -0.5rem;
 		-webkit-overflow-scrolling: touch;
 		-ms-overflow-style: none;
@@ -42,6 +42,16 @@
 				transform: skew(30deg);
 				display: inline-block;
 				text-transform: uppercase;
+			}
+		}
+
+		&:last-child {
+			a {
+				background-color: #e00122;
+
+				span {
+					color: #fff;
+				}
 			}
 		}
 	}
