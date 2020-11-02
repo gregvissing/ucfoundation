@@ -114,4 +114,4 @@ collections:
           - label: "Fonts"
             name: "fonts"
             widget: "hidden"
-            default: { "base": "\"'Segoe UI Symbol'\"", "serif": "\"'Rift', serif\""}
+            default: { "base": "\"'Open Sans'\"", "serif": "\"'Lora', serif\""}
