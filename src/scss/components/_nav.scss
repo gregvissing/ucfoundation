@@ -13,9 +13,13 @@ header {
 		-webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
 		box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
 	}
+
+	.wrapper {}
 }
 
 .nav {
+	margin-right: 23px;
+
 	&__list {
 		// overflow-x: auto;
 
@@ -46,7 +50,7 @@ header {
 
 			padding: get-size(300) 10px;
 			border-left: 2px solid #e00122;
-
+			display: block;
 
 			@include apply-utility('weight', 'mid');
 

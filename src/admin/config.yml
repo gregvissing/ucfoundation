@@ -91,7 +91,7 @@ collections:
             name: "size-scale"
             widget: "object"
             fields: 
-              - {label: "Base Size", name: "base", widget: "string", default: "1rem"}
+              - {label: "Base Size", name: "base", widget: "string", default: "1.285714286rem"}
               - {label: "Ratio: 300", name: "300", widget: "string", default: "0.8rem"}
               - {label: "Ratio: 500", name: "500", widget: "string", default: "1.25rem"}
               - {label: "Ratio: 600", name: "600", widget: "string", default: "1.56rem"}
