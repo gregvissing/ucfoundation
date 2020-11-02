@@ -51,6 +51,10 @@
 		color: var(--uc-brand-red);
 	}
 
+	input[type="text"] {
+		border: 1px solid #ccc;
+	}
+
 	div[class*="-box"] {
 		border: 1px solid #ccc;
 		border-radius: 0;
@@ -78,11 +82,6 @@
 				background-color: #000 !important;
 			}
 		}
-	}
-
-	div label {
-		font-size: 1.25em;
-		width: 100%;
 	}
 
 	.button-container {
@@ -123,7 +122,9 @@
 		-webkit-transform: skew(-30deg);
 		transform: skew(-30deg);
 		-webkit-animation: animateLeft 1s ease-in;
+		animation: animateLeft 1s ease-in;
 		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
 	}
 
 	a {
@@ -153,7 +154,27 @@
 	}
 }
 
+@keyframes animateLeft {
+	0% {
+		left: 150%;
+	}
+
+	100% {
+		left: 25%;
+	}
+}
+
 @-webkit-keyframes animateOpacity {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes animateOpacity {
 	0% {
 		opacity: 0;
 	}

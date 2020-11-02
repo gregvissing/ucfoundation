@@ -19,13 +19,3 @@
 		@content;
 	}
 }
-
-@mixin transition($args...) {
-	-webkit-transition: $args;
-	-moz-transition: $args;
-	-ms-transition: $args;
-	-o-transition: $args;
-	transition: $args;
-}
-
-// @include transition(all 0.4s ease-in-out);

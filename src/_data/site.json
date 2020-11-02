@@ -8,6 +8,7 @@
   "authorName": "Greg Vissing",
   "enableThirdPartyComments": false,
   "paymentPointer": "$ilp.uphold.com/MggmnFEyQqhk",
-  "faviconPath": "/images/favicon.png",
+  "faviconPath": "https://foundation.uc.edu/view.image?id=4343",
+  "faviconPathAlt": "/images/favicon.png",
   "maxPostsPerPage": 3
 }

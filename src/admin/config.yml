@@ -115,4 +115,4 @@ collections:
           - label: "Fonts"
             name: "fonts"
             widget: "hidden"
-            default: { "base": "\"'Open Sans'\"", "serif": "\"'Lora', serif\""}
+            default: { "base": "\"'Open Sans'\"", "sans-serif": "\"'Rift', sans-serif\""}
