@@ -76,3 +76,31 @@
 		}
 	}
 }
+
+@-webkit-keyframes animateLeft {
+	0% {
+		left: 150%;
+	}
+
+	100% {
+		left: 25%;
+	}
+}
+
+@-webkit-keyframes animateOpacity {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+	section.hero .btn-container:after,
+	section.hero a {
+		animation: none;
+	}
+}

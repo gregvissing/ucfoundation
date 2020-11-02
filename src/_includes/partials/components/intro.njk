@@ -1,18 +1,29 @@
 <header class="[ intro ] [ pad-top-900 pad-bottom-max ]">
-  <img src="https://foundation.uc.edu/image/_2019-redesign/triangle-pattern.png" alt="hero triangle pattern" class="trianglePattern">
-  <div class="[ inner-wrapper ] [ sf-flow ]">
-    <h1 class="[ intro__heading{{ ' intro__heading--compact' if page.url === '/' }} ] [ text-800 md:text-900 leading-tight ] [ p-name ] hide">{{ introHeading }}</h1>
-    {% if introSummary %}
-      <div class="[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ] hide">{{ introSummary | safe }}</div>
-    {% endif %}
+	<img src="https://foundation.uc.edu/image/_2019-redesign/triangle-pattern.png" alt="hero triangle pattern"
+		class="trianglePattern">
+	<div class="[ inner-wrapper ] [ sf-flow ]">
+		<h1
+			class="[ intro__heading{{ ' intro__heading--compact' if page.url === '/' }} ] [ text-800 md:text-900 leading-tight ] [ p-name ] hide">
+			{{ introHeading }}</h1>
+		{% if introSummary %}
+		<div class="[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ] hide">{{ introSummary | safe }}</div>
+		{% endif %}
 
-	<div class="width-half">
-		<h2 class="ta-center">MAKE A GIFT</h2>
-	</div>
+		<div class="width-half">
+			<h2 class="ta-center">MAKE A GIFT</h2>
+			<div class="row dollar-handles pad-bottom-300 [ box-flex space-between ]"></div>
+			<div class="row pad-bottom-300 [ box-flex flex-direction-column ]"><label for="custom-amount">Custom gift amount:</label><input id="custom-amount" type="text" placeholder="$0.00"></div>
+			<div class="row gift-type-container pad-bottom-300 [ box-flex space-between ]"></div>
+			<div class="row button-container [ box-flex align-start ]">
+				<a class=" donate button-primary [ button ] [ font-base text-base weight-bold pad-left-500 ]" href="giveToUC.html?amount=100&amp;type=One-Time">MAKE A GIFT</a>
+			</div>
+		</div>
 
-	<div class="btn-container">
-		<a href="/Campaign/About" class="button-primary button parallelogram"><span class="skew-fix">CAMPAIGN INFO</span></a>
-		<a href="#" id="show-modal" class="button-secondary button parallelogram"><span class="skew-fix">WATCH VIDEO</span></a>
+		<div class="btn-container">
+			<a href="/Campaign/About" class="button-primary button parallelogram"><span class="skew-fix">CAMPAIGN
+					INFO</span></a>
+			<a href="#" id="show-modal" class="button-secondary button parallelogram"><span class="skew-fix">WATCH
+					VIDEO</span></a>
+		</div>
 	</div>
-  </div>
 </header>
