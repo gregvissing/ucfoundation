@@ -1,6 +1,6 @@
 .intro {
 	//   background: var(--color-theme-highlight-block);
-	background: url("https://foundation.uc.edu/image/_2019-redesign/homepage-hero-images/hero-2048x1000-student-7.jpg");
+	background: url("https://foundation.uc.edu/image/_2019-redesign/homepage-hero-images/hero-2048x1000-teacher.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -13,6 +13,7 @@
 		margin: auto;
 		right: -30%;
 		width: 80%;
+		z-index: 0;
 	}
 
 	&__summary {
@@ -34,6 +35,65 @@
 
 		&--compact {
 			max-width: 20ex;
+		}
+	}
+}
+
+#donationForm {
+	background-color: #fff;
+	margin-right: 0;
+	margin-left: auto;
+	padding: 1em;
+	position: relative;
+	z-index: 10;
+
+	div[class*="-box"] {
+		border: 1px solid #ccc;
+		border-radius: 0;
+		margin: 0;
+
+		input {
+			margin: 0;
+			border: none;
+			background-color: transparent;
+		}
+
+		&.dollar-box {
+			width: 19%;
+		}
+
+		&.gift-box {
+			width: 32%;
+		}
+
+		&.active {
+			background-color: #000 !important;
+
+			input {
+				color: #fff;
+				background-color: #000 !important;
+			}
+		}
+	}
+
+	div label {
+		font-size: 1.25em;
+		width: 100%;
+	}
+
+	.button-container {
+		position: relative;
+
+		>.donate {
+			color: #fff;
+			margin-right: 1em;
+			position: relative;
+			font-family: "rift";
+			font-style: italic;
+			letter-spacing: 0.3px !important;
+			display: inline-block;
+			font-size: 1.25em;
+			font-weight: 500;
 		}
 	}
 }
