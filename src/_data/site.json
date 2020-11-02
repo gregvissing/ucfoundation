@@ -1,5 +1,5 @@
 {
-  "showThemeCredit": true,
+  "showThemeCredit": false,
   "name": "University of Cincinnati Foundation",
   "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
   "url": "https://hylia.website",
@@ -9,5 +9,5 @@
   "enableThirdPartyComments": false,
   "paymentPointer": "$ilp.uphold.com/MggmnFEyQqhk",
   "faviconPath": "/images/favicon.png",
-  "maxPostsPerPage": 5
+  "maxPostsPerPage": 3
 }
