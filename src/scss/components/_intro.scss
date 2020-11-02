@@ -37,3 +37,42 @@
 		}
 	}
 }
+
+.btn-container {
+	position: relative;
+	text-align: center;
+
+	&:after {
+		position: absolute;
+		content: "";
+		background-color: #ce0e2d;
+		opacity: .5;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		left: 25%;
+		margin: 0;
+		z-index: 0;
+		width: 150%;
+		-webkit-transform: skew(-30deg);
+		transform: skew(-30deg);
+		-webkit-animation: animateLeft 1s ease-in;
+		-webkit-animation-fill-mode: forwards;
+	}
+
+	a {
+		position: relative;
+		z-index: 1;
+
+		&.button {
+			&.button-primary {
+				background-color: #e00122;
+				margin-right: 1em;
+			}
+
+			&.button-secondary {
+				background-color: #404040;
+			}
+		}
+	}
+}
