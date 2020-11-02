@@ -47,6 +47,10 @@
 	position: relative;
 	z-index: 10;
 
+	h2 {
+		color: var(--uc-brand-red);
+	}
+
 	div[class*="-box"] {
 		border: 1px solid #ccc;
 		border-radius: 0;
@@ -94,6 +98,8 @@
 			display: inline-block;
 			font-size: 1.25em;
 			font-weight: 500;
+			background-color: var(--uc-brand-red);
+			;
 		}
 	}
 }

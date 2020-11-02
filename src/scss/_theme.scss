@@ -1,5 +1,7 @@
 :root {
 
+	--uc-brand-red: #e00122;
+
 	// Pull the tokens and generate custom props
 	@each $color in $stalfos-colors {
 		#{'--color-' + nth($color, 1)}: #{nth($color, 2)};
