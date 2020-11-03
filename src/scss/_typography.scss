@@ -70,14 +70,18 @@ p.large {
 	font-weight: 400;
 }
 
-p {
-	font-size: calc(1em * var(--text-multiplier, 1));
+p,
+a,
+label,
+input {
+	font-size: calc(1.125em * var(--text-multiplier, 1)) !important;
 	line-height: normal;
+
+	>* {
+		font-size: inherit;
+	}
 }
 
-a {
-	line-height: normal;
-}
 
 // @include media-query('md') {
 // 	h1 {

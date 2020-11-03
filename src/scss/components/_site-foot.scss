@@ -61,8 +61,21 @@
 				label {
 					text-transform: uppercase;
 					margin-bottom: 0.75rem;
+					font-weight: 700;
 				}
 			}
 		}
 	}
+
+	p,
+	a,
+	label {
+		font-size: calc(1.125em * var(--text-multiplier, 0.9)) !important;
+		line-height: normal;
+
+		>* {
+			font-size: inherit;
+		}
+	}
+
 }
