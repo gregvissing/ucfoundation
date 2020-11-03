@@ -1,14 +1,41 @@
 <a class="skip-link" href="#main-content">Skip to content</a>
-<header role="banner" class="[ site-head ] [ pad-top-300 pad-bottom-300 ">
-  <div class="wrapper">
-    <div class="[ site-head__inner ] [ md:box-flex space-between align-center ]">
-      <a href="/" class="[ site-head__site-name ] [ leading-tight ]">
-	    <img src="https://foundation.uc.edu/image/_2019-redesign/UCF_Logo_BlackRed.png" alt="University of Cincinnati Foundation logo">
-        <span class="visually-hidden">{{ site.name }} - Home</span>
-        <span class="[ site-head__site-name ] [ text-600 ] hide" aria-hidden="true">{{ site.name }}</span>
-      </a>
-      {% set ariaLabel = 'navigation' %}
-      {% include "partials/components/nav.njk" %}
-    </div>
-  </div>
+<header role="banner" class="[ site-head ]">
+	<div id="search">
+		<div class="wrapper">
+			<table id="PC17758_tableMainAdd" class="QuickSearchFormTable" border="0">
+				<tbody>
+					<tr>
+						<td>
+							<label for="PC17758_txtQuickSearch" id="PC17758_lblTxtSearch"
+								class="BBFieldCaption QuickSearchFieldCaption">Search:</label>
+						</td>
+						<td>
+							<input name="PC17758$txtQuickSearch" type="text" maxlength="255" id="PC17758_txtQuickSearch"
+								class="QuickSearchTextbox"
+								onkeydown="javascript:if (isEnterPressed(event)) {try{document.getElementById('PC17758_btnQuickSearch').click();return false;} catch(e) {}} else return true;"
+								aria-label="Search" placeholder="Search">
+						</td>
+						<td>
+							<label for="PC17758_btnQuickSearch" id="PC17758_lblQuickSearch"
+								style="display: none; visibility: hidden;">Search</label>
+							<input type="submit" name="PC17758$btnQuickSearch" value="Search" id="PC17758_btnQuickSearch"
+								class="BBFormSubmitButton QuickSearchButton">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="wrapper [ pad-top-300 pad-bottom-300 ]">
+		<div class="[ site-head__inner ] [ md:box-flex space-between align-center ]">
+			<a href="/" class="[ site-head__site-name ] [ leading-tight ]">
+				<img src="https://foundation.uc.edu/image/_2019-redesign/UCF_Logo_BlackRed.png"
+					alt="University of Cincinnati Foundation logo">
+				<span class="visually-hidden">{{ site.name }} - Home</span>
+				<span class="[ site-head__site-name ] [ text-600 ] hide" aria-hidden="true">{{ site.name }}</span>
+			</a>
+			{% set ariaLabel = 'navigation' %}
+			{% include "partials/components/nav.njk" %}
+		</div>
+	</div>
 </header>

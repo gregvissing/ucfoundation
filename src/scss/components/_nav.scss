@@ -13,8 +13,43 @@ header {
 		-webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
 		box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
 	}
+}
 
-	.wrapper {}
+#search {
+	background-color: #000;
+	display: none;
+
+	div[id*='_pnlSearch'],
+	div[id*='_pnlSearch'] table {
+		width: 100%;
+	}
+
+	.QuickSearchFormTable {
+		width: 100%;
+
+		tr {
+			display: flex;
+			justify-content: flex-end;
+
+			td {
+				&:first-child {
+					display: none;
+				}
+
+				&:nth-child(2) {
+					width: 300px;
+					margin-right: 5px;
+				}
+
+				&:last-child {
+					input {
+						color: #fff;
+						background-color: #e00122;
+					}
+				}
+			}
+		}
+	}
 }
 
 .nav {
@@ -51,6 +86,7 @@ header {
 			padding: get-size(300) 10px;
 			border-left: 2px solid #e00122;
 			display: block;
+			font-size: 1.25rem;
 
 			@include apply-utility('weight', 'mid');
 
@@ -58,11 +94,16 @@ header {
 				text-decoration: none;
 			}
 
+			svg {
+				margin-right: 5px;
+			}
+
 			span {
 				-webkit-transform: skew(30deg);
 				transform: skew(30deg);
 				display: inline-block;
 				text-transform: uppercase;
+				font-size: inherit;
 			}
 		}
 
@@ -76,4 +117,10 @@ header {
 			}
 		}
 	}
+}
+
+.searchIcon {
+	-webkit-transform: skew(30deg);
+	transform: skew(30deg);
+	width: 15px;
 }

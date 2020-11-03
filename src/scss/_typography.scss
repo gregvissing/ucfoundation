@@ -34,30 +34,61 @@ h6 {
 	// @include apply-utility('font', 'sansserif');
 	font-style: italic;
 	font-family: "Rift", sans-serif;
+	letter-spacing: 0.3px;
 }
 
 h1 {
-	font-size: get-size(700);
+	// font-size: get-size(700);
+	font-size: calc(3.75em * var(--text-multiplier, 1));
 }
 
 h2 {
-	font-size: get-size(600);
+	// font-size: get-size(600);
+	font-size: calc(3.125em * var(--text-multiplier, 1));
 }
 
 h3 {
-	font-size: get-size(500);
+	// font-size: get-size(500);
+	font-size: calc(2.5em * var(--text-multiplier, 1));
 }
 
-@include media-query('md') {
-	h1 {
-		font-size: get-size(900);
-	}
-
-	h2 {
-		font-size: get-size(800);
-	}
-
-	h3 {
-		font-size: get-size(700);
-	}
+h4 {
+	font-size: calc(2.188em * var(--text-multiplier, 1));
 }
+
+h5 {
+	font-size: calc(1.875em * var(--text-multiplier, 1));
+}
+
+h6 {
+	font-size: calc(1.563em * var(--text-multiplier, 1));
+}
+
+p.large {
+	font-size: calc(1.25em * var(--text-multiplier, 1));
+	line-height: normal;
+	font-weight: 400;
+}
+
+p {
+	font-size: calc(1em * var(--text-multiplier, 1));
+	line-height: normal;
+}
+
+a {
+	line-height: normal;
+}
+
+// @include media-query('md') {
+// 	h1 {
+// 		font-size: get-size(900);
+// 	}
+
+// 	h2 {
+// 		font-size: get-size(800);
+// 	}
+
+// 	h3 {
+// 		font-size: get-size(700);
+// 	}
+// }
